@@ -1,0 +1,201 @@
+
+*{
+    
+}
+body{
+    margin: 0;
+    background-color: #0C0703;
+}
+.content{
+
+    background-color:#0C0703;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+header{
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    border-bottom: 1.5px solid;
+    justify-content: space-between;
+}
+header h1{
+    display: inline;
+    font-weight: 600;
+    font-style: Serif;
+    color: #E4DED7;
+    font-size: 50px;
+    line-height: 42px;
+}
+.options {
+    display: flex;
+    margin-top: 40px;
+    column-gap: 30px;
+}
+.options a{
+    color: #E4DED7;
+    text-decoration: none;
+    font-family: "Domine", serif;
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 40px;
+}
+.content{
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+}
+.container{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.landing{
+    border-bottom: 1.5 solid;
+    gap: 56px;
+    margin-top: 30px
+}
+.container .landing h1{
+    
+    font-family: "Domine", serif;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 120px;
+    text-align: center;
+    color: #E4DED7;
+
+
+
+
+}
+.landing .image1{
+    width: 100%;
+    border: 1.5px solid;
+    border-radius: 28px;
+    align-content: center;
+    margin-top: 70px;
+
+}
+.showcase{
+    padding-top: 52px;
+    padding-bottom: 52px;
+    background-color:#0C0703;
+}
+
+.mainshowcase h3{
+    font-family: "Domine", serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 40px;
+    color: #E4DED7;
+    margin-bottom: 40px;
+    
+}
+.services{
+
+    display: flex;
+    justify-content: space-between;
+}
+.services #s1{
+    width: 200%;border-radius: 8px; border: 1.3px solid;
+}
+.services #s2{
+    width: 200%;border-radius: 8px; border: 1.3px solid;
+}
+.services #s3{
+    width: 200%;border-radius: 8px; border: 1.3px solid;
+}
+.para{
+
+Gap:14px;
+}
+
+.p1{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 24px;
+    color: #E4DED7;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.p2{
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    color: #E4DED7;
+}
+.viewproject{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding-top: 30px;
+}
+.About{
+    margin-top: 100px;
+}
+.About p{
+    font-family: "Domine", serif;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 52px;
+    text-align: center;
+    color: #E4DED7;
+}
+
+.Contact-info{
+    padding-top: 52px;
+    padding-bottom: 52px;
+    border-bottom: 1.5px;
+    background-color: #0C0703;
+
+    display: flex;
+}
+.Contact-info h4{
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #E4DED7;
+}
+.ContactP{
+margin-left: 350px;
+
+
+}
+.ContactP p{
+    font-family: "Outfit", sans-serif;;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 28px;
+    color: #E4DED7;
+    margin-top: 42px;
+    width: 100%;
+
+}
+
+.footer{
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+
+}
+.footer p{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 32px;
+    color: #EBDDD19E;
+    
+}
+
+
+.contact-button button{
+    font-size: 27px;
+    color: #E4DED7;
+    background-color: #0C0703;
+    border: 1.5px solid #B6A39133;
+    border-radius: 8px;
+    padding: 22px 34px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-family:"Outfit", sans-serif;;
+}
