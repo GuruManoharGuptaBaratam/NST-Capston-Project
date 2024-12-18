@@ -127,6 +127,9 @@ Gap:14px;
     font-style: normal;
     padding-top: 30px;
 }
+.viewproject form button{
+    background-color:#B87333 ;color: #FEFCFB;padding: 10px 20px;border-radius: 8px;font-weight: 500;font-size: 20px;cursor: pointer;
+}
 .About{
     margin-top: 100px;
 }
@@ -244,7 +247,7 @@ margin-left: 350px;
     }
     .contact-button{
         margin-top: 20px;
-        margin-left: 400px;
+        margin-left: 190px;
     }
      .para{
         text-align: center;
@@ -255,5 +258,10 @@ margin-left: 350px;
     }
     .para .p2{
         line-height: 30px;
+    }
+    button{
+        margin-left: 210px;
+        width: 180px;
+        padding: 20px;
     }
 }
