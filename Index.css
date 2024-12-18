@@ -1,7 +1,4 @@
 
-*{
-    
-}
 body{
     margin: 0;
     background-color: #0C0703;
@@ -22,7 +19,6 @@ header{
 }
 header h1{
     display: inline;
-    font-weight: 600;
     font-style: Serif;
     color: #E4DED7;
     font-size: 50px;
@@ -148,7 +144,6 @@ Gap:14px;
     padding-bottom: 52px;
     border-bottom: 1.5px;
     background-color: #0C0703;
-
     display: flex;
 }
 .Contact-info h4{
@@ -198,4 +193,67 @@ margin-left: 350px;
     cursor: pointer;
     margin-right: 20px;
     font-family:"Outfit", sans-serif;;
+}
+@media screen and (max-width:600px){
+    .header h1{
+        display: flex;
+        font-size: 60px;
+    }
+    .options{
+        display: none !important;
+    }
+    .container .landing h1{
+        font-size: 7.5rem;
+        margin-left: 5rem;
+        display: flex;
+        align-items: center;
+    }
+    .landing .image1{
+        width: 300%;
+        padding-right: 25px;
+
+    }
+    .mainshowcase h3{
+        font-size: 3rem;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-left:9.375rem;
+        margin-right: 3.75rem;
+    }
+    .services img{
+        width: 300%;
+    }
+    .p1,.p2{
+        font-size: 30px;
+        width: 350px;
+    }
+    .About{
+        margin-left: 250px;
+        display: flex;
+    }
+    .ContactP{
+        margin-left: 580px;
+    }
+    .Contact-info h4{
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .contact-button{
+        margin-top: 20px;
+        margin-left: 400px;
+    }
+     .para{
+        text-align: center;
+        margin-left: 150px;
+    }
+    .para .p1{
+        font-size: 40px;
+    }
+    .para .p2{
+        line-height: 30px;
+    }
 }
