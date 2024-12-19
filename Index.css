@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    padding: 0;
 
 }
 body{
@@ -8,17 +7,13 @@ body{
     background-color: #0C0703;
 }
 .content{
-
     background-color:#0C0703;
-    padding-left: 38px;
-    padding-right: 38px;
 }
 header{
-    padding-bottom: 20px;
     display: flex;
     border-bottom: 1.5px solid;
     justify-content: space-between;
-    box-sizing: border-box;
+    margin-top: 20px;
 }
 header h1{
     display: inline;
@@ -38,13 +33,7 @@ header h1{
     font-family: "Domine", serif;
     font-weight: 400;
     line-height: 32px;
-    font-size: 40px;
-}
-.content{
-
-    padding-top: 48px;
-    padding-bottom: 48px;
-
+    font-size: 2.5rem;
 }
 .container{
     padding-top: 48px;
@@ -59,14 +48,9 @@ header h1{
 .container .landing h1{
     
     font-family: "Domine", serif;
-    font-size: 135px;
-    line-height: 120px;
+    font-size: 5rem;
     text-align: center;
     color: #E4DED7;
-
-
-
-
 }
 .landing .image1{
     width: 100%;
@@ -94,8 +78,10 @@ header h1{
 }
 .services{
 
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    grid-template-columns: repeat(3,1fr);
+    overflow: auto;
 }
 .services #s1{
     width: 200%;border-radius: 8px; border: 1.3px solid;
@@ -184,7 +170,6 @@ margin-left: 350px;
 .footer p{
     font-weight: 400;
     font-size: 40px;
-    line-height: 32px;
     color: #EBDDD19E;
     
 }
@@ -198,113 +183,299 @@ margin-left: 350px;
     border-radius: 8px;
     padding: 22px 34px;
     cursor: pointer;
-    margin-right: 20px;
     font-family:"Outfit", sans-serif;;
 }
-@media screen  and (max-width:600px){
-    .header h1{
-        display: flex;
-        font-size: 60px;
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #0C0703;
     }
-    .options{
-        display: none !important;
+    
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
-    .container .landing h1{
-        font-size: 7.5rem;
-        margin-left: 5rem;
-        display: flex;
+
+    header {
+        flex-direction: column;
         align-items: center;
     }
-    .landing .image1{
-        width: 300%;
-        padding-right: 25px;
 
-    }
-    .mainshowcase h3{
-        font-size: 3rem;
-        padding-left: 400px;
-
-    }
-    .services{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 3rem;
-        margin-left:9.375rem;
-        margin-right: 3.75rem;
-    }
-    .services img{
-        width: 300%;
-    }
-    .p1,.p2{
-        font-size: 30px;
-        width: 350px;
-    }
-    .About{
-        margin-left: 250px;
-        display: flex;
-    }
-    .ContactP{
-        margin-left: 580px;
-    }
-    .Contact-info h4{
-        font-size: 45px;
-        line-height: 45px;
-    }
-    .contact-button{
-        margin-top: 20px;
-        margin-left: 190px;
-    }
-     .para{
-        text-align: center;
-        margin-left: 150px;
-    }
-    .para .p1{
-        font-size: 40px;
-    }
-    .para .p2{
+    header h1 {
+        font-size: 36px;
         line-height: 30px;
     }
-    button{
-        margin-left: 210px;
-        width: 180px;
-        padding: 20px;
+
+    .options {
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+        margin-top: 40px;
     }
 
-}
- @media only screen and (min-width:601px) and (max-width:1024px){
-    .services{
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: 60px;
+    .options a {
+        font-size: 30px;
+        line-height: 30px;
     }
-    #s1{
-        margin-bottom: 25px;
+
+    .landing h1 {
+        font-size: 72px;
+        line-height: 60px;
+    }
+
+    .landing .image1 {
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 14px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .services #s1,
+    .services #s2,
+    .services #s3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mainshowcase h3 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    .para .p1 {
+        font-size: 28px;
+        line-height: 22px;
+    }
+
+    .para .p2 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .viewproject form button {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+
+    .About p {
+        font-size: 45px;
+    }
+
+    .Contact-info {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .ContactP {
+        margin-left: 0;
         text-align: center;
     }
-    #s2{
-        margin-bottom: 25px;
-        text-align: center;
+
+    .ContactP p {
+        font-size: 20px;
     }
-    #s3{
-        margin-bottom: 25px;
-        text-align: center;
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
     }
-    .services img{
-    width: 80%;
+
+    .footer p {
+        font-size: 30px;
+    }
+
+    .contact-button button {
+        font-size: 22px;
+        padding: 16px 24px;
+    }
 }
 
-.options a{
-    font-size: 30px;
-}
-.Contact-info h4{
-    margin-top: 50px;
-}
-.ContactP{
-    margin-left: 100px;
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: #0C0703;
+    }
 
+    .content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    header h1 {
+        font-size: 42px;
+        line-height: 36px;
+    }
+
+    .options a {
+        font-size: 36px;
+        line-height: 32px;
+    }
+
+    .landing h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .landing .image1 {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .services {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services #s1,
+    .services #s2,
+    .services #s3 {
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    .mainshowcase h3 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .para .p1 {
+        font-size: 32px;
+        line-height: 30px;
+    }
+
+    .para .p2 {
+        font-size: 20px;
+    }
+
+    .viewproject form button {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+    .About p {
+        font-size: 50px;
+    }
+
+    .Contact-info {
+        flex-direction: row;
+    }
+
+    .ContactP {
+        margin-left: 100px;
+        text-align: left;
+    }
+
+    .ContactP p {
+        font-size: 22px;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer p {
+        font-size: 35px;
+    }
+
+    .contact-button button {
+        font-size: 24px;
+        padding: 18px 30px;
+    }
 }
-.About{
-    font-size: 100px;
+
+@media screen and (min-width: 1025px) {
+    body {
+        background-color: #0C0703;
+    }
+
+    .content {
+        padding-left: 38px;
+        padding-right: 38px;
+    }
+
+    header h1 {
+        font-size: 50px;
+        line-height: 42px;
+    }
+
+    .options a {
+        font-size: 40px;
+    }
+
+    .landing h1 {
+        font-size: 135px;
+        line-height: 120px;
+    }
+
+    .landing .image1 {
+        width: 100%;
+        border-radius: 28px;
+    }
+
+    .services {
+        justify-content: space-between;
+        overflow: auto;
+    }
+
+    .services #s1,
+    .services #s2,
+    .services #s3 {
+        width: 30%;
+    }
+
+    .mainshowcase h3 {
+        font-size: 64px;
+        line-height: 40px;
+    }
+
+    .para .p1 {
+        font-size: 35px;
+        line-height: 33px;
+    }
+
+    .para .p2 {
+        font-size: 23px;
+    }
+
+    .viewproject form button {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .About p {
+        font-size: 58px;
+    }
+
+    .Contact-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ContactP {
+        margin-left: 350px;
+    }
+
+    .ContactP p {
+        font-size: 27px;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .footer p {
+        font-size: 40px;
+    }
+
+    .contact-button button {
+        font-size: 27px;
+        padding: 22px 34px;
+    }
 }
-} 
