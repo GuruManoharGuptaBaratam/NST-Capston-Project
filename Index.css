@@ -53,9 +53,7 @@ header h1{
     color: #E4DED7;
 }
 .landing .image1{
-    width: 100%;
     border: 1.5px solid;
-    border-radius: 28px;
     align-content: center;
     margin-top: 70px;
 
@@ -79,18 +77,18 @@ header h1{
 .services{
 
     display: grid;
-    justify-content: space-between;
+
     grid-template-columns: repeat(3,1fr);
     overflow: auto;
 }
 .services #s1{
-    width: 200%;border-radius: 8px; border: 1.3px solid;
+border-radius: 8px; border: 1.3px solid;
 }
 .services #s2{
-    width: 200%;border-radius: 8px; border: 1.3px solid;
+border-radius: 8px; border: 1.3px solid;
 }
 .services #s3{
-    width: 200%;border-radius: 8px; border: 1.3px solid;
+border-radius: 8px; border: 1.3px solid;
 }
 #s1 img, #s2 img, #s3 img{
     border-radius: 30px;
@@ -129,7 +127,6 @@ Gap:14px;
 .About p{
     font-family: "Domine", serif;
     font-weight: 400;
-    font-size: 58px;
     line-height: 52px;
     text-align: center;
     color: #E4DED7;
@@ -156,10 +153,10 @@ margin-left: 350px;
 .ContactP p{
     font-family: "Outfit", sans-serif;;
     font-weight: 400;
-    font-size: 27px;
+
     line-height: 28px;
     color: #E4DED7;
-    margin-top: 42px;
+
     width: 100%;
 
 }
@@ -195,8 +192,6 @@ margin-left: 350px;
     }
     
     .content {
-        padding-left: 20px;
-        padding-right: 20px;
         padding-top: 24px;
         padding-bottom: 24px;
     }
@@ -486,5 +481,36 @@ margin-left: 350px;
     .contact-button button {
         font-size: 27px;
         padding: 22px 34px;
+    }
+}
+@media screen and (min-width:0px) and (max-width:571px){
+    .landing h1{
+        font-size: 35px !important;
+        line-height: 50px;
+        text-align: center;
+    }
+    .options{
+        text-align: center;
+    }
+    .options a{
+        font-size: 25px;
+    }
+    .container{
+        padding-top: 0;
+    }
+    .services img{
+        width: 300px;
+    }
+    .para .p2{
+        display: none;
+    }
+    .About p{
+        font-size: 200%;
+    }
+    .services{
+        width: 100%;
+    }
+    .mainshowcase h3{
+        font-size: 2rem;
     }
 }
