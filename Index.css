@@ -92,6 +92,9 @@ header h1{
 .services #s3{
     width: 200%;border-radius: 8px; border: 1.3px solid;
 }
+#s1 img, #s2 img, #s3 img{
+    border-radius: 30px;
+}
 .para{
 
 Gap:14px;
@@ -233,6 +236,7 @@ margin-left: 350px;
 
     .services {
         flex-direction: column;
+        gap: 30px;
     }
 
     .services #s1,
@@ -331,6 +335,7 @@ margin-left: 350px;
     .services {
         flex-direction: row;
         justify-content: space-between;
+        gap:30px;
     }
 
     .services #s1,
@@ -338,6 +343,10 @@ margin-left: 350px;
     .services #s3 {
         width: 30%;
         margin-bottom: 0;
+
+    }
+    #s1 img, #s2 img, #s3 img{
+        border-radius: 15px;
     }
 
     .mainshowcase h3 {
