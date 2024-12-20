@@ -513,4 +513,6 @@ margin-left: 350px;
     .mainshowcase h3{
         font-size: 2rem;
     }
+    .contact-button{
+        display: none;
 }
